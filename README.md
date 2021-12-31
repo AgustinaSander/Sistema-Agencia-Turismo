@@ -1,13 +1,6 @@
 # TP Final - Sistema para Agencia de Turismo
 El siguiente proyecto fue realizado en el curso de <code>Desarrollador Web Fullstack Java</code> del Polotic Misiones en el 2021.
 Fue diseñado para que los empleados de la agencia puedan gestionar los clientes, servicios y paquetes turisticos y ventas de la empresa.
-Cuenta con:
-- Registro y login de usuario
-- Alta y Modificacion de empleados
-- Alta, Baja y Modificacion de clientes
-- Alta, Baja y Modificacion de servicios turisticos
-- Alta, Baja y Modificacion de paquetes turisticos
-- Alta y seccion de estadisticas de ventas
 
 ## Indice
 1. <a href="#acerca-de-la-implementacion">Acerca de la Implementacion</a>
@@ -17,79 +10,62 @@ Cuenta con:
 
 
 ## Acerca de la Implementacion
-El sistema fue implementado con <code>Java</code> usando el IDE Netbeans. <br>
-La aplicacion tiene formato web por lo que se utilizo <code>JSP</code> (Java Server Pages), <code>JPA</code> (Java Persistence API) con Base de Datos <code>MySQL</code> y se tuvieron en cuenta los principios de la Programacion Orientada a Objetos.
-<br> Se realizan validaciones de los campos mediante Javascript utilizando <code>JQuery</code>. <br>
-Se utilizo una plantilla para la interfaz que luego se la personalizo utilizando <code>Bootstrap</code>.
+- El sistema fue implementado con <code>Java</code> usando el IDE Netbeans. <br>
+- La aplicacion tiene formato web por lo que se utilizo <code>JSP</code> (Java Server Pages), <code>JPA</code> (Java Persistence API) con Base de Datos <code>MySQL</code> y se tuvieron en cuenta los principios de la Programacion Orientada a Objetos.
+<br>- Se diferenciaron las capas de Logica, Persistencia e Interfaz Grafica creando una Controladora de Logica, una Controladora de Persistencia y los respectivos <code>Servlets</code> para lograr la comunicacion entre la interfaz y la capa logica.
+<br>- Se realizan validaciones de los campos mediante Javascript utilizando <code>JQuery</code>. <br>- Se utilizo una plantilla para la interfaz que luego se la personalizo utilizando <code>Bootstrap</code>.
 
 ## Imagenes
-<div align="center">
-<img src="" alt="interfaz-principal" width="20%">
-</div>
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/75265449/147797111-3bb90f1b-7ea8-413b-a088-2b71bfdc17e5.png" height="300px" alt="alta-pasajero">
-
-<img src="https://user-images.githubusercontent.com/75265449/147797123-edc50b30-295a-41df-9ce9-b47f566c848e.png" height="300px" alt="alta-pasajero">
-</div>
-
-<div align="center">
-<img src="https://user-images.githubusercontent.com/75265449/147797136-c5c4a6e8-6937-40d9-a0a4-7af8d84dc8d2.png" height="300px" alt="alta-pasajero">
-
-<img src="https://user-images.githubusercontent.com/75265449/147797151-17d14ede-8bc8-4dcc-a8cd-f60a623c1fe6.png" height="300px"  alt="alta-pasajero">
-</div>
-
-<div align="center">
-<img src="https://user-images.githubusercontent.com/75265449/147797169-465dc2ac-421f-40a4-a9bc-07babd2ac09b.png"  height="300px" alt="alta-pasajero">
-
-<img src="https://user-images.githubusercontent.com/75265449/147797200-52a2c572-231d-4419-94ca-41e775f14d46.png"  height="300px"  alt="alta-pasajero">
+  <b>Registro y LogIn de Usuario</b>
+  <br><br>
+  <img src="https://user-images.githubusercontent.com/75265449/147799611-f5cd8ca6-206b-4cce-83bf-7ce24b383aee.png" height="800px" alt="login">
+  <br><br>
+  <b>Seccion de perfil de Empleado</b>
+  <br><br>
+  <img src="https://user-images.githubusercontent.com/75265449/147799730-38941b15-b8b5-4cec-bb3f-00d2a2d8012a.png" height="600px" alt="empleado">
+  <br><br>
+  <b>Seccion de Servicios Turisticos</b>
+  <br><br>
+  <img src="https://user-images.githubusercontent.com/75265449/147799790-7bb457b4-b261-426a-b291-3f66c6ef747f.png" height="600px" alt="servicios">  
+  <br><br>
+  <b>Seccion de Paquetes Turisticos</b>
+  <br><br>
+  <img src="https://user-images.githubusercontent.com/75265449/147800144-82c3d817-4df9-4aea-a8d2-120c0ce3ec13.png" height="600px" alt="paquetes">
+  <br><br>
+  <b>Seccion de Ventas</b>
+  <br><br>
+  <img src="https://user-images.githubusercontent.com/75265449/147800051-a9002559-b4da-4525-8b3a-dd4d88b9b617.png" height="800px" alt="venta">
+  <br><br>
+  <b>Seccion de Estadisticas</b>
+  <br><br>
+  <img src="https://user-images.githubusercontent.com/75265449/147799893-8b5a1be4-8685-491f-beb6-e0349840d94a.png"  height="600px"  alt="estadisticas">
 </div>
 
 ## Etapas del proyecto
-1 - Se comenzo realizando el <code>Diseño de Entradas y Salidas</code> del sistema a partir del enunciado y los casos de uso brindados por la catedra. Se realizaron mock-ups de todas las interfaces y se especificaron las longitudes y los formatos de la informacion de entrada y salida.
+1 - Se comenzo analizando los requerimientos que el sistema debia cumplir a partir del enunciado brindado por la profesora del curso.
 <br>
-2 - Se realizo el <code>Diagrama de Clases</code> teniendo en cuenta la presencia de Interfaces y Gestores. En los gestores se implemento el <b>Patron Singleton</b> y en las demas clases se utilizo el <b>Patron DAO</b>. 
+2 - Se realizo el <code>Diagrama de Clases</code> teniendo en cuenta herencias y cardinalidades.
 <div align="center">
-  <a href="https://user-images.githubusercontent.com/75265449/147794738-900f8a4c-1c07-48c6-8fea-08dc04f0b029.png" target="_blank">Ver Diagrama de Clases</a>
-  <img src="https://user-images.githubusercontent.com/75265449/147794738-900f8a4c-1c07-48c6-8fea-08dc04f0b029.png" alt="diagrama-clases" width="30%">
+  <img src="https://user-images.githubusercontent.com/75265449/147800332-b4af781d-4359-4d27-a29a-696d735408a4.png" alt="diagrama-clases" width="80%">
 </div>
 <br>
 
-3 - Se realizo el <code>Diagrama Entidad-Relacion</code> y el <code>Diagrama de Tablas</code>.
-<div align="center">
-<img src="https://user-images.githubusercontent.com/75265449/147796668-d71af687-385d-4474-9812-a81baff42fe3.png"  alt="diagrama-der" width="30%">
-</div>
-
-4 - Se realizo el <code>Diagrama de Transicion de Estados</code> de una Habitacion.
+3 - Se realizo la implementacion de las siguientes funcionalidades:
 <br>
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/75265449/147796081-3d8b3da6-2f52-4829-8017-7c0fc3913445.png" alt="diagrama-estados" width="50%">
-</div>
-<br>
-5 - Se realizaron los <code>Diagramas de Secuencia</code> de los casos de uso:
-<li>Gestionar Pasajero</li>
-<li>Dar Alta de Pasajero</li>
-<li>Reservar Habitacion</li>
-<li>Mostrar Estado Habitacion</li>
-<li>Ocupar Habitacion</li>
-<li>Facturar</li>
-<li>Ingresar Pago</li>
-<div align="center">
-<img src="https://user-images.githubusercontent.com/75265449/147796313-134f50ba-a851-469c-87e0-cd71165a047b.png" alt="diagrama-secuencia" width="50%">
-</div>
+<li> Registro y login de usuario</li>
+<li> Alta y Modificacion de empleados</li>
+<li> Alta, Baja y Modificacion de clientes</li>
+<li> Alta, Baja y Modificacion de servicios turisticos</li>
+<li> Alta, Baja y Modificacion de paquetes turisticos</li>
+<li> Alta y seccion de estadisticas de ventas</li>
 
-<br>
-6 - Se implementaron los siguientes casos de uso:
-
-<li> <b>Dar Alta de Pasajero:</b> Se agrega un pasajero.</li>
-<li> <b>Modificar Pasajero:</b> Se modifican los datos de un pasajero.</li>
-<li> <b>Gestionar Pasajero:</b> Se buscan los pasajeros por "nombre", "apellido", "tipo de documento", "numero de documento" y se listan los resultados.</li>
-<li> <b>Mostrar Estado Habitacion:</b> Tabla donde se muestra el estado de cada habitacion dentro de un rango de fechas.</li>
-<li> <b>Ocupar Habitacion:</b> Se registra una estadia en una habitacion.</li>
-<li> <b>Facturar:</b> Se facturan los servicios consumidos por los pasajeros de la ultima estadia de la habitacion.</li>
 
 ## Aclaraciones
-Al correr el codigo debe asegurarse de tener la url de conexion a la base de forma correcta.
-El codigo esta en el paquete Conexion.
-
-Puede que necesite cambiar el numero de puerto de 3307 a 3306.
+Para correr el codigo, los datos de la base de datos son:
+NOMBRE DE BASE DE DATOS: tpfinal
+URL: jdbc:mysql://localhost:3307/tpfinal?serverTimezone=UTC
+PUERTO: 3307
+USUARIO: root
+CONTRASENA: 
