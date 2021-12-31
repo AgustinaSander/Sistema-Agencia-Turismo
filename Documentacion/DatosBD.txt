@@ -1,0 +1,5 @@
+NOMBRE DE BASE DE DATOS: tpfinal
+URL: jdbc:mysql://localhost:3307/tpfinal?serverTimezone=UTC
+PUERTO: 3307
+USUARIO: root
+CONTRASENA: 
