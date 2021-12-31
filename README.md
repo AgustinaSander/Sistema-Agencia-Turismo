@@ -64,8 +64,8 @@ Fue diseñado para que los empleados de la agencia puedan gestionar los clientes
 
 ## Aclaraciones
 Para correr el codigo, los datos de la base de datos son: <br>
-NOMBRE DE BASE DE DATOS: tpfinal
-URL: jdbc:mysql://localhost:3307/tpfinal?serverTimezone=UTC
-PUERTO: 3307
-USUARIO: root
-CONTRASENA: 
+NOMBRE DE BASE DE DATOS: tpfinal <br>
+URL: jdbc:mysql://localhost:3307/tpfinal?serverTimezone=UTC <br>
+PUERTO: 3307 <br>
+USUARIO: root <br>
+CONTRASENA: <br>
