@@ -1,5 +1,5 @@
 # TP Final - Sistema para Agencia de Turismo
-El siguiente proyecto fue realizado en el curso de <code>Desarrollador Web Fullstack Java</code> del Polotic Misiones en el 2021.
+El siguiente proyecto fue realizado en el curso de <code>Desarrollo Web Fullstack con Java</code> del Polotic Misiones en el 2021.
 Fue diseñado para que los empleados de la agencia puedan gestionar los clientes, servicios y paquetes turisticos y ventas de la empresa.
 
 ## Indice
@@ -14,6 +14,7 @@ Fue diseñado para que los empleados de la agencia puedan gestionar los clientes
 - La aplicacion tiene formato web por lo que se utilizo <code>JSP</code> (Java Server Pages), <code>JPA</code> (Java Persistence API) con Base de Datos <code>MySQL</code> y se tuvieron en cuenta los principios de la Programacion Orientada a Objetos.
 <br>- Se diferenciaron las capas de Logica, Persistencia e Interfaz Grafica creando una Controladora de Logica, una Controladora de Persistencia y los respectivos <code>Servlets</code> para lograr la comunicacion entre la interfaz y la capa logica.
 <br>- Se realizan validaciones de los campos mediante Javascript utilizando <code>JQuery</code>. <br>- Se utilizo una plantilla para la interfaz que luego se la personalizo utilizando <code>Bootstrap</code>.
+- Las eliminaciones se realizan aplicando borrado logico para que estas no afecten los registros de las ventas.
 
 ## Imagenes
 
